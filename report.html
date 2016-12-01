@@ -11779,7 +11779,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Load pickled data</span>
@@ -11812,7 +11812,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### To start off let&#39;s do a basic data summary.</span>
@@ -11863,7 +11863,7 @@ Number of classes = 43
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### Data exploration visualization goes here.</span>
@@ -12146,7 +12146,7 @@ WEiSpNYYWEiSpNYYWEiSpNYYWEiSpNYYWEiSpNb8f9c7s2XHrkMVAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### Preprocess the data here.</span>
@@ -12165,16 +12165,16 @@ WEiSpNYYWEiSpNYYWEiSpNYYWEiSpNYYWEiSpNb8f9c7s2XHrkMVAAAAAElFTkSuQmCC
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">X_train</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
-<span class="c1">#print(&quot;Before normalization&quot;)</span>
-<span class="c1">#print(X_train[0])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Before normalization&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">X_train</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 
 <span class="c1">###Divide the image by 255 to normalize it between 0 and 1 </span>
 
 <span class="n">X_train</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">/</span><span class="mf">255.</span>
 <span class="n">X_test</span> <span class="o">=</span>  <span class="n">X_test</span><span class="o">/</span><span class="mf">255.</span>
 
-<span class="c1">#print(&quot;After normalization&quot;)</span>
-<span class="c1">#print(X_train[0])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;After normalization&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">X_train</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -13706,6 +13706,110 @@ o41OSBsIb7TRRhudkDYQ3mijjTY6IW0gvNFGG210QtpAeKONNtrohLSB8EYbbbTRCen/A6kthDus
 
 </div>
 
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Before normalization
+[[[ 75  78  80]
+  [ 74  76  78]
+  [ 83  84  83]
+  ..., 
+  [ 67  74  73]
+  [ 65  69  68]
+  [ 66  67  66]]
+
+ [[ 82  83  85]
+  [ 80  80  82]
+  [ 87  86  83]
+  ..., 
+  [ 73  77  77]
+  [ 75  77  75]
+  [ 79  79  77]]
+
+ [[ 79  79  81]
+  [ 84  83  85]
+  [ 91  88  89]
+  ..., 
+  [ 72  74  72]
+  [ 74  75  71]
+  [ 78  78  74]]
+
+ ..., 
+ [[126 128 133]
+  [118 123 128]
+  [108 117 120]
+  ..., 
+  [ 96  96  90]
+  [ 99 101  94]
+  [ 99 103  99]]
+
+ [[ 90  94  98]
+  [ 91  97 103]
+  [ 77  87  92]
+  ..., 
+  [104 104  97]
+  [107 111 102]
+  [ 95 103  97]]
+
+ [[ 85  84  87]
+  [ 93  99 104]
+  [ 69  80  85]
+  ..., 
+  [101 102  94]
+  [ 98 101  90]
+  [ 90  97  89]]]
+After normalization
+[[[ 0.29411765  0.30588235  0.31372549]
+  [ 0.29019608  0.29803922  0.30588235]
+  [ 0.3254902   0.32941176  0.3254902 ]
+  ..., 
+  [ 0.2627451   0.29019608  0.28627451]
+  [ 0.25490196  0.27058824  0.26666667]
+  [ 0.25882353  0.2627451   0.25882353]]
+
+ [[ 0.32156863  0.3254902   0.33333333]
+  [ 0.31372549  0.31372549  0.32156863]
+  [ 0.34117647  0.3372549   0.3254902 ]
+  ..., 
+  [ 0.28627451  0.30196078  0.30196078]
+  [ 0.29411765  0.30196078  0.29411765]
+  [ 0.30980392  0.30980392  0.30196078]]
+
+ [[ 0.30980392  0.30980392  0.31764706]
+  [ 0.32941176  0.3254902   0.33333333]
+  [ 0.35686275  0.34509804  0.34901961]
+  ..., 
+  [ 0.28235294  0.29019608  0.28235294]
+  [ 0.29019608  0.29411765  0.27843137]
+  [ 0.30588235  0.30588235  0.29019608]]
+
+ ..., 
+ [[ 0.49411765  0.50196078  0.52156863]
+  [ 0.4627451   0.48235294  0.50196078]
+  [ 0.42352941  0.45882353  0.47058824]
+  ..., 
+  [ 0.37647059  0.37647059  0.35294118]
+  [ 0.38823529  0.39607843  0.36862745]
+  [ 0.38823529  0.40392157  0.38823529]]
+
+ [[ 0.35294118  0.36862745  0.38431373]
+  [ 0.35686275  0.38039216  0.40392157]
+  [ 0.30196078  0.34117647  0.36078431]
+  ..., 
+  [ 0.40784314  0.40784314  0.38039216]
+  [ 0.41960784  0.43529412  0.4       ]
+  [ 0.37254902  0.40392157  0.38039216]]
+
+ [[ 0.33333333  0.32941176  0.34117647]
+  [ 0.36470588  0.38823529  0.40784314]
+  [ 0.27058824  0.31372549  0.33333333]
+  ..., 
+  [ 0.39607843  0.4         0.36862745]
+  [ 0.38431373  0.39607843  0.35294118]
+  [ 0.35294118  0.38039216  0.34901961]]]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13730,7 +13834,9 @@ o41OSBsIb7TRRhudkDYQ3mijjTY6IW0gvNFGG210QtpAeKONNtrohLSB8EYbbbTRCen/A6kthDus
 That makes our job easier.</li></p>
 <p><li>Also, color is an important factor when considering traffic signs.Hence I dont think it is a good idea to convert the images to grayscale.</li></p>
 <p><li>Therefore the only steps required for the preprocessing is to normalize the data.</li></p>
-<p><li>To normalize the data, we simply divide the training and the test data by 255.</li>
+<p><li>To normalize the data, we simply divide the training and the test data by 255.*Normalizing the data makes the job of the classifier much easier since the feature space is now having a uniform variance and a mean which is close to zero. This brings all the variables in proportion to each other.*</li></p>
+<p><li>Since the RGB values lie between 0 and 255 for each of the channels, dividing the images with 255 makes the values in the image between 0 and 1.</li></p>
+<p><li>The data shown above shows the transformation of the image before and after normalization</li>
 &lt;/ul&gt;</p>
 
 </div>
@@ -14109,9 +14215,11 @@ test accuracy 0.940222
 <p><strong>Answer:</strong></p>
 <p>1) Optimizer : We use adam optimizer instead of the gradient descent optimizer simply because Adam uses moving averages of the parameters (momentum), so we do not have to worry about fine tuning the hyperparameters. Adam to use a larger effective step size, and the algorithm will converge to this step size without fine tuning.
 (Reference : <a href="http://stats.stackexchange.com/questions/184448/difference-between-gradientdescentoptimizer-and-adamoptimizer-tensorflow">http://stats.stackexchange.com/questions/184448/difference-between-gradientdescentoptimizer-and-adamoptimizer-tensorflow</a>)<br></p>
-<p>2) We have used a batch size of 100 and epoch size of 1000. I could have used more epochs but training this model takes a long time on my machine which unfortunately does not have a CUDA compatible GPU.<br></p>
-<p>3) We have used a drop out rate of 0.5 for the training , but 1.0 i.e no dropout for the validation and the test data<br></p>
-<p>4) I have saved this model as model_1000_iterations.ckpt and have reused it for the rest of the project below</p>
+<p>2) We can clearly see from the training above that accuracy improves significantly in the first part of the training iterations, the accuracy improves at a slower pace in the later part. If we extrapolate this behavior, we can clearly see that for the accuracy of the training to improve to 98%+, we at least would need 10000 iterations. But training would take a significantly long period of time. <br></p>
+<p>3) Hence with respect to time and resources available, we have used an epoch size of 1000. I could have used more epochs ie at least around 10000, but training this model takes a long time on my machine which unfortunately does not have a CUDA compatible GPU.<br></p>
+<p>4) We have used a batch size of 100. A small batch size has a smaller memory footprint and hence the training data can fit in memory. If the data does not fit in memory, then we will get out of memory error.</p>
+<p>5) We have used a drop out rate of 0.5 for the training , but 1.0 i.e no dropout for the validation and the test data<br></p>
+<p>6) I have saved this model as model_1000_iterations.ckpt and have reused it for the rest of the project below</p>
 
 </div>
 </div>
@@ -15328,9 +15436,14 @@ EnJwNzMrIQd3M7MScnA3MyshB3czsxJycDczKyEHdzOzEnJwNzMrIQd3M7MScnA3MyshB3czsxL6
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong><br>
-1) We are using a 2 layered CNN with dropout to solve this problem.<br> 
-2) The advantages of using CNN over other approaches is that CNN is more suitable for classification and learning.<br> features on images. Once the model is well trained, it performs really well.<br>
-3) However, training the model requires more time, and specialized hardware if we want to speed it up.<br></p>
+1) I started first with a simple linear classifier . The training was pretty fast and I could easily reach upto 80% accuracy<br>
+2) Next I tried training a simple neural network with 1 hidden layer. That improved the accuracy to 90%.<br>
+3) To get to the next level, I tried out a Convolution Neural Network (CNN) with different configurations<br>
+4) The different configurations included the number of convolutions, padding, pooling and dropout configurations. Training a CNN takes considerable more time. Also with added complexity, arises the challenge of overfitting the data.
+5) I finally settled down on using a 2 layered CNN with dropout to solve this problem.<br> 
+6) The advantages of using CNN over other approaches is that CNN is more suitable for classification and learning features on images. Once the model is well trained, it performs really well.<br>
+8) Also, a 2 layered CNN takes less time to train compared to more complicated CNN configurations. Hence complexity of a CNN is a tradeoff when compared to the time and resources available for training.<br>
+7) With more complicated CNNs, training requires more time, and specialized hardware if we want to speed it up.<br></p>
 
 </div>
 </div>
@@ -45749,7 +45862,8 @@ Speed limit (70km/h)
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong><br>
 1) As shown above, the model performs reasonably well on images.<br> 
-2) It would perform well on videos as well, however, we would have to write a wrapper on top on this model that inputs an image in the correct format ( 32x32x3)</p>
+2) It would perform well on videos as well, however, we would have to write a wrapper on top on this model that inputs an image in the correct format ( 32x32x3)<br>
+3) Compared to the test images, the captured images are more clearer and well lit. Hence they perform better on the captured events. Also many of the failures in the test data are related to the speed signs ie 20kph , 70kph etc. In such images, if the model is not well trained OR if the images are not clear enough, the model does not seem to classify the images well. That was one of the main reasons, I selected a well lit 70kph image in the test above. The model was able to identify it correctly. This shows that for well lit images, the model works well. So in our final product ( the self driving car), with good cameras and other sensors, we should be able to produce good images for our classifier that would definitely improve the accuracy of the CNN.</p>
 
 </div>
 </div>
